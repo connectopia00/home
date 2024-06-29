@@ -1,28 +1,397 @@
+
+
+
+
 <!DOCTYPE html>
 <html lang="en">
 
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Home</title>
+  <title>connectopia00 Home</title>
   <style>
     * {
-      margin: 0;
       padding: 0;
+      margin: 0;
     }
-    body{
+
+    .show {
+      display: block;
+    }
+
+    .hide {
+      display: none;
+    }
+
+    .page {
       width: 100vw;
-      height:   100vh;
+      position: relative;
     }
-    #myiframe {
+
+
+    video {
+      object-fit: cover;
+    }
+
+    video,
+    img {
+      width: 100%;
+      height: 100vh;
+    }
+
+    .button {
+      position: absolute;
+      width: 150px;
+      height: 150px;
+      /* background: #cccccc20; */
+      cursor: pointer;
+    }
+
+    .fullBtn {
+      top: 0;
+      left: 0;
       width: 100%;
       height: 100%;
+    }
+
+    #messageForm {
+      position: absolute;
+      bottom: 37px;
+      right: 14px;
+    }
+
+    #messageForm input {
+      width: 19vw;
+      height: 4.4vh;
+      border: 1px solid #ccc;
+      border-radius: 2.2vh;
+      padding: 0 10px;
+      background: hsla(0, 0%, 80%, 0.50);
+      color: #fff;
+    }
+
+    .message-item {
+      font-size: 24px;
+      display: inline;
+    }
+
+    .message-box {
+      position: absolute;
+      margin: 20px;
+      top: 0;
+      left: 0;
+      z-index: 1;
+      color: hsla(0, 0%, 100%, 0.85);
+    }
+    .page-button-11{
+      background: url(https://img.alicdn.com/imgextra/i2/O1CN01AKtFqf1cdNufXnufB_!!6000000003623-2-tps-146-145.png);
     }
   </style>
 </head>
 
-<body>
-  <iframe id="myiframe" src="http://47.116.211.91:59877" frameborder="0"></iframe>
+
+<body><script  type="text/javascript">
+(function  (d)  {
+var  t=d.createElement("script");t.type="text/javascript";t.async=true;t.id="tb-beacon-aplus";
+t.setAttribute("exparams","category=&userid=&aplus&yunid=distributor%5fde%2a%2a%2a%2a%40test%2ealiyunid%2ecom&yunpk=5204760013701992&channel=&cps=");
+t.src="//g.alicdn.com/alilog/mlog/aplus_v2.js";
+d.getElementsByTagName("head")[0].appendChild(t);
+})(document);
+</script><script>
+with(document)with(body)with(insertBefore(createElement("script"),firstChild))setAttribute("exparams","category=&userid=&aplus&udpid=&&yunid=&&trid=a3b5a4a317196613335766062e&asid=AQAAAAAV839m6vr1AAAAAAC83Q2Cl55zWw==",id="tb-beacon-aplus",src=(location>"https"?"//g":"//g")+".alicdn.com/alilog/mlog/aplus_v2.js")
+</script>
+
+  <div id="page-1" class="show page">
+    <video loop muted autoplay class="page-video-1"
+      src="https://cloud.video.taobao.com/vod/play/c0NxdW0wMXVzbFBNWWQxVFFVZHduR2tvZ200UHVDb3dQcQ/OEVKTExPSnk2UGVsNUp6SlVVQk5YeDlRTjdFeVFFTFA3bmNUSWpPNlRNbHV3R04zTmh3PT0"></video>
+    <div class="button" style="bottom: 0;left: 45%; cursor: pointer;"></div>
+  </div>
+  <div id="page-2" class="hide page">
+    <video loop class="page-video-2"
+      src="https://cloud.video.taobao.com/vod/play/c0NxdW0wMXVzbFBNWWQxVFFVZHduRjVLV2xRV1VLdWdXTWFsd0Rld0hweTZQZWw1SnpKVVVCTlh4OVFON0V5UUVMUDduY1RJak82VE1sdXdHTjNOaHc9PQ"></video>
+    <div class="button" style="bottom: 0;left: 45%; cursor: pointer;"></div>
+  </div>
+
+  <div id="page-3" class="hide page">
+    <video loop class="page-video-3"
+      src="https://cloud.video.taobao.com/vod/play/c0NxdW0wMXVzbFBNWWQxVFFVZHduS0V5Nm56/dlZ6bDR3b0x0NmxSOXEyNlBlbDVKekpVVUJOWHg5UU43RXlRRUxQN25jVElqTzZUTWx1d0dOM05odz09"></video>
+    <div class="button" style="left: 0;top: 40%; cursor: pointer;"></div>
+    <div class="button" style="right: 0;top: 40%; cursor: pointer;"></div>
+  </div>
+
+
+  <div id="page-4" class="hide page">
+    <video loop class="page-video-4"
+      src="https://cloud.video.taobao.com/vod/play/c0NxdW0wMXVzbFBNWWQxVFFVZHduTTJZMldWK2M2UkYxQmlNeWo4WGg2VzZQZWw1SnpKVVVCTlh4OVFON0V5UUVMUDduY1RJak82VE1sdXdHTjNOaHc9PQ"></video>
+    <div class="button" style="right: 0;top: 40%; cursor: pointer;"></div>
+  </div>
+
+  <div id="page-16" class="hide page">
+    <video loop class="page-video-16"
+      src="https://cloud.video.taobao.com/vod/play/c0NxdW0wMXVzbFBNWWQxVFFVZHduR3phbzYzeFo1UUNobGF1cmhuYkc4aTZQZWw1SnpKVVVCTlh4OVFON0V5UUVMUDduY1RJak82VE1sdXdHTjNOaHc9PQ"></video>
+    <div class="button fullBtn"></div>
+  </div>
+
+  <div id="page-5" class="hide page">
+    <video loop class="page-video-5"
+      src="https://cloud.video.taobao.com/vod/play/NjZEdkoxVkxCRVd2SU1wUnpDclVxc09WWExYYUNhb25VVVpkbUE0SzgrKzZQZWw1SnpKVVVCTlh4OVFON0V5UUVMUDduY1RJak82VE1sdXdHTjNOaHc9PQ"></video>
+    <div class="button page-button-6" style="right: 7%;top: 42%;"></div>
+    <div class="button page-button-7" style="left: 10%;top: 60%;"></div>
+    <div class="button page-button-8" style="left: 20%;top: 16%;"></div>
+    <div class="button page-button-9" style="left: 80%;top: 15%;"></div>
+    <div class="button page-button-10" style="right: 24%;bottom: 0;"></div>
+    <div class="button page-button-11" style="right: 0%;bottom: 0;"></div>
+  </div>
+
+  <div id="page-6" class="hide page">
+    <video loop class="page-video-6"
+      src="https://cloud.video.taobao.com/vod/play/c0NxdW0wMXVzbFBNWWQxVFFVZHduUE45REd1ZGMzcGN5K2xBZ2VOSXRWVzZQZWw1SnpKVVVCTlh4OVFON0V5UUVMUDduY1RJak82VE1sdXdHTjNOaHc9PQ"></video>
+    <div class="button fullBtn"></div>
+  </div>
+
+  <div id="page-7" class="hide page">
+    <video loop class="page-video-7"
+      src="https://cloud.video.taobao.com/vod/play/c0NxdW0wMXVzbFBNWWQxVFFVZHduSUxCVG5ReDNKREpKNGozY0tqMEt5NjZQZWw1SnpKVVVCTlh4OVFON0V5UUVMUDduY1RJak82VE1sdXdHTjNOaHc9PQ"></video>
+    <div class="button fullBtn"></div>
+  </div>
+
+  <div id="page-8" class="hide page">
+    <video loop class="page-video-8"
+      src="https://cloud.video.taobao.com/vod/play/c0NxdW0wMXVzbFBNWWQxVFFVZHduRzlLUnBIeTdlRHRZajNORjREWG1ySzZQZWw1SnpKVVVCTlh4OVFON0V5UUVMUDduY1RJak82VE1sdXdHTjNOaHc9PQ"></video>
+    <div class="button fullBtn"></div>
+  </div>
+
+  <div id="page-9" class="hide page">
+    <video loop class="page-video-9"
+      src="https://cloud.video.taobao.com/vod/play/c0NxdW0wMXVzbFBNWWQxVFFVZHduRVN3QmlTMmE/TmNpZ1F6a0xFVlI0ZTZQZWw1SnpKVVVCTlh4OVFON0V5UUVMUDduY1RJak82VE1sdXdHTjNOaHc9PQ"></video>
+    <div class="button fullBtn"></div>
+  </div>
+
+  <div id="page-10" class="hide page">
+    <video loop class="page-video-10"
+      src="https://cloud.video.taobao.com/vod/play/c0NxdW0wMXVzbFBNWWQxVFFVZHduQ3cweDVmWDhZV2ZCZQ/S2EreWg5YXE2UGVsNUp6SlVVQk5YeDlRTjdFeVFFTFA3bmNUSWpPNlRNbHV3R04zTmh3PT0"></video>
+    <div class="button fullBtn"></div>
+  </div>
+
+  <div id="page-11" class="hide page">
+    <video loop class="page-video-11"
+      src="https://cloud.video.taobao.com/vod/play/ZGlBdVhhYitoK3l4MzBTVFhqYlJqamtPK3dUaUgrNUhWcGhrSFcrMXpPNjZQZWw1SnpKVVVCTlh4OVFON0V5UUVMUDduY1RJak82VE1sdXdHTjNOaHc9PQ"></video>
+    <div class="button" style="top: 40%;right: 0%; cursor: pointer;"></div>
+  </div>
+
+  <div id="page-12" class="hide page">
+    <video class="page-video-12"
+      src="https://cloud.video.taobao.com/vod/play/ZGlBdVhhYitoK3l4MzBTVFhqYlJqanh6cXFyMjlnZzQxN3BXb1pMYTFhbTZQZWw1SnpKVVVCTlh4OVFON0V5UUVMUDduY1RJak82VE1sdXdHTjNOaHc9PQ"></video>
+    <div class="button" style="top: 40%;right: 30%; cursor: pointer;"></div>
+  </div>
+
+  <div id="page-13" class="hide page">
+    <video class="page-video-13"
+      src="https://cloud.video.taobao.com/vod/play/R0VXZEtvSVNEQ3lwbjRMRTVLQ1RNTmlWRnlRQTZlWTc2MmRB/V1pCU21LNlBlbDVKekpVVUJOWHg5UU43RXlRRUxQN25jVElqTzZUTWx1d0dOM05odz09"></video>
+    <div class="button" style="top: 40%;right: 42%;"></div>
+  </div>
+
+  <!-- <div id="page-14" class="hide page">
+    <img src="https://img.alicdn.com/imgextra/i2/O1CN01MP5l0y1Nlt1lywWpt_!!6000000001611-0-tps-1366-768.jpg" alt="">
+    <div class="button" style="width:30% ;top: 40%;right: 42%;"></div>
+  </div> -->
+
+  <div id="page-15" class="hide page">
+    <img src="https://img.alicdn.com/imgextra/i4/O1CN01VlD1y91VAnszKjqYq_!!6000000002613-0-tps-1366-768.jpg" alt="">
+    <form id="messageForm">
+      <input type="text" id="messageInput" placeholder="Write your message...">
+    </form>
+    <div class="message-box"></div>
+  </div>
+
+  <script src="//g.alicdn.com/marketplace/static/0.0.1/jquery.min.js"></script>
+  <script>
+    function deleteMsg(id) {
+      $.ajax({
+        type: "GET",
+        url: "https://connect.ysqg.com/api/message/delete",
+        data: {
+          id,
+        },
+        success: function (response) {
+          console.log("成功deleteMsg:", response);
+          if (response.msg !== "success") return;
+          getMsg()
+        },
+        error: function (jqXHR, textStatus, errorThrown) {
+          console.error("错误deleteMsg:", textStatus, errorThrown);
+        }
+      });
+    }
+
+    function getMsg() {
+      $.ajax({
+        type: "GET",
+        url: "https://connect.ysqg.com/api/message/find",
+        data: {
+          user: 'admin',
+        },
+        success: function (response) {
+          console.log("成功getList:", response);
+          if (response.msg !== "success") return;
+          localStorage.setItem('messageList', JSON.stringify(response.data));
+          response?.data.forEach(item => {
+            $('.message-box').append(`<p class="message-item">
+              ${item.content}_
+        </p>`)
+          })
+          return response.data;
+        },
+        error: function (jqXHR, textStatus, errorThrown) {
+          console.error("错误getList:", textStatus, errorThrown);
+          // 在这里处理错误的逻辑
+        }
+      });
+    }
+
+    function submitMsg(formData) {
+      $.ajax({
+        type: "POST",
+        url: "https://connect.ysqg.com/api/message/add",
+        data: {
+          user: 'admin',
+          content: formData,
+          source: window.location.href
+        },
+        success: function (response) {
+          console.log("submitMsg成功:", response);
+          // 在这里处理成功的逻辑
+          $('.message-box').append(`<div class="message-item">
+              ${formData}_
+        </div>`)
+        },
+        error: function (jqXHR, textStatus, errorThrown) {
+          console.error("错误:", textStatus, errorThrown);
+          // 在这里处理错误的逻辑
+        }
+      });
+    }
+    $(document).ready(() => {
+      playVideo(1)
+
+      getMsg()
+      $("#messageForm").on("submit", function (event) {
+        event.preventDefault();
+        let formData = $("#messageInput").val();
+        submitMsg(formData)
+      });
+
+      function pauseVideo(index) {
+        var video = document.getElementsByClassName('page-video-' + index)
+        video[0].pause()
+      }
+
+      function playVideo(index) {
+        var video = document.getElementsByClassName('page-video-' + index)
+        video[0].play()
+      }
+
+      function hideThisShowOther(index, otherIndex, noVideo) {
+        $('#page-' + index).removeClass('show').addClass('hide')
+        $('#page-' + otherIndex).removeClass('hide').addClass('show')
+        if (!noVideo) {
+          pauseVideo(index)
+          playVideo(otherIndex)
+        }
+      }
+
+      $('#page-1 .button').click(() => {
+        hideThisShowOther(1, 2)
+      })
+
+      $('#page-2 .button').click(() => {
+        hideThisShowOther(2, 3)
+      })
+
+      $('#page-3 .button').click(() => {
+        hideThisShowOther(3, 4)
+      })
+
+
+      $('#page-4 .button').click(() => {
+        hideThisShowOther(4, 16)
+      })
+      $('#page-16 .button').click(() => {
+        hideThisShowOther(16, 5)
+      })
+
+      $('#page-5 .button').click((e) => {
+        if ($(e.target).hasClass('page-button-6')) {
+          hideThisShowOther(5, 6)
+        } else if ($(e.target).hasClass('page-button-7')) {
+          hideThisShowOther(5, 7)
+        } else if ($(e.target).hasClass('page-button-8')) {
+          hideThisShowOther(5, 8)
+        } else if ($(e.target).hasClass('page-button-9')) {
+          hideThisShowOther(5, 9)
+        } else if ($(e.target).hasClass('page-button-10')) {
+          hideThisShowOther(5, 10)
+        } else if ($(e.target).hasClass('page-button-11')) {
+          hideThisShowOther(5, 11)
+        }
+      })
+      var clickData = {
+        page6: false,
+        page7: false,
+        page8: false,
+        page9: false,
+        page10: false,
+      }
+      $('#page-6 .button').click(() => {
+        hideThisShowOther(6, 5)
+        clickData.page6 = true
+        toPage11(6)
+      })
+      $('#page-7 .button').click(() => {
+        hideThisShowOther(7, 5)
+        clickData.page7 = true
+        toPage11(7)
+      })
+      $('#page-8 .button').click(() => {
+        hideThisShowOther(8, 5)
+        clickData.page8 = true
+        toPage11(8)
+      })
+      $('#page-9 .button').click(() => {
+        hideThisShowOther(9, 5)
+        clickData.page9 = true
+        toPage11(9)
+      })
+      $('#page-10 .button').click(() => {
+        hideThisShowOther(10, 5)
+        clickData.page10 = true
+        toPage11(10)
+      })
+
+      function toPage11(index) {
+        const data = Object.values(clickData).every(v => !!v)
+        if (data) {
+          hideThisShowOther(5, 11)
+        }
+      }
+
+      $('#page-11 .button').click(() => {
+        hideThisShowOther(11, 12)
+      })
+
+      $('#page-12 .button').click(() => {
+        hideThisShowOther(12, 13)
+      })
+
+      $('#page-13 .button').click(() => {
+        hideThisShowOther(13, 15, true)
+      })
+
+      // $('#page-14 .button').click(() => {
+      //   hideThisShowOther(14, 15, true)
+      // })
+    });
+  </script>
 </body>
 
 </html>
